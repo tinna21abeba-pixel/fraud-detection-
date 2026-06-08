@@ -1,0 +1,80 @@
+# ==============================================================================
+# Data and Large Artifacts (Strict Requirement for this Project)
+# ==============================================================================
+# Ignore all raw and processed data to prevent hitting GitHub's 100MB file limit
+data/
+data/raw/
+data/processed/
+
+# Ignore specific large files just in case they get placed in the root
+*.csv
+*.xlsx
+*.parquet
+
+# Ignore trained model binaries (e.g., pickle, joblib, or xgboost model weights)
+models/*.pkl
+models/*.joblib
+models/*.bst
+models/*.h5
+
+# ==============================================================================
+# Python Environment & Package Artifacts
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+nbenv/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==============================================================================
+# Jupyter Notebook Caches
+# ==============================================================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ==============================================================================
+# IDEs and Text Editors
+# ==============================================================================
+# Keeping .vscode/settings.json is allowed based on your structure, 
+# but ignore workspace-specific setups or personal local settings.
+.vscode/.project
+.vscode/.factorypath
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==============================================================================
+# OS Generated Files
+# ==============================================================================
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.dbin
